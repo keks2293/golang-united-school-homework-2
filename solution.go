@@ -11,10 +11,10 @@ import (
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 type intCustomType int
-func CalcSquare(sideLen float64, sidesNum #yourTypeNameHere#) float64 {
-	if sidesNum = 3 return math.pow(sideLen, 2)\2
-	else if sidesNum = 4 return math.pow(sideLen, 2) 
-	else if sidesNum = 0 math.Pi * sideLen
-	else return 0
+func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
+	if sidesNum == 3 {return math.Pow(sideLen, 2)\2}
+	else if sidesNum == 4 {return math.Pow(sideLen, 2)}
+	else if sidesNum == 0 {return math.Pi * sideLen}
+	else {return 0}
 	
 }
