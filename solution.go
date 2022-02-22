@@ -11,14 +11,14 @@ import (
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
-type intCustomType int
+type intCustomType string
 
 func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
-	if sidesNum == 3 {
+	if sidesNum == "SidesTriangle" {
 		return math.Pow(sideLen, 2) / 2
-	} else if sidesNum == 4 {
+	} else if sidesNum == "SidesSquare" {
 		return math.Pow(sideLen, 2)
-	} else if sidesNum == 0 {
+	} else if sidesNum == "SidesCircle" {
 		return math.Pi * sideLen
 	} else {
 		return 0
