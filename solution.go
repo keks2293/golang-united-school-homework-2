@@ -21,7 +21,7 @@ type intCustomType int
 
 func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
 	if sidesNum == 3 {
-		return math.Pow(sideLen, 2) * math.Pow(3, -2) / 4
+		return math.Pow(sideLen, 2) * math.Pow(3, 1/2) / 4
 	} else if sidesNum == 4 {
 		return math.Pow(sideLen, 2)
 	} else if sidesNum == 0 {
